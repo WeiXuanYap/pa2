@@ -2,6 +2,7 @@
 Programming Assignment 2
 
 1. Why do you see a difference in webpage fetch times with small and large router buffers?
+
 Since h1 has a faster connection to the router than the uplink connection, the router buffer becomes a bottleneck to the connection.
 When the buffer is full, it needs to be drained before TCP Congestion Control can resume. Hence, a larger buffer results in longer queues and higher
 latency delays since the packets take longer to drain. This consequently results in longer webpage fetch times.
