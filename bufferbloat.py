@@ -216,7 +216,7 @@ def bufferbloat():
             transfer_time = h2.popen(cmd).communicate()[0]
             transfer_times.append(float(transfer_time))
         
-	print(transfer_times)
+        print(transfer_times)
         sleep(5)
 
     # TODO: compute average (and standard deviation) of the fetch
